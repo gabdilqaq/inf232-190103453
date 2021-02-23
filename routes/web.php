@@ -16,9 +16,13 @@ Route::get('/', function () {
     return view('welcome');
 });;
 
+
+//here it returns view
 Route::get('/user', function () {
     return view('username');
 });;
+
+
 
 Route::get('full_name/{fname}/{lname}',function($fname,$lname){
     return "First name: ".$fname."<br>Last name: ".$lname;
